@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片展示</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(245, 243, 220);
+        }
+        .box{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            gap:50px;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+        }
+        .card .img{
+            width: 200px;
+            height: 200px;
+            border-radius: 12px;
+            box-shadow: 2px 2px 10px rgba(139, 109, 66, 0.25);
+        }
+        .card .caption{
+            text-align: center;
+            font-family: '宋体', 'SimSun', 'Songti SC', serif;
+            font-size: 20px;
+            color: #6b4f2c;
+            letter-spacing: 2px; 
+            margin-top: 10px;
+        }
+        .image1{
+            background: url(2.jpg) no-repeat center/cover;
+        }
+        .image2{
+            background: url(3.jpg) no-repeat center/cover;
+        }
+        .image3{
+            background: url(4.jpg) no-repeat center/cover;
+        }
+        .image4{
+            background: url(5.jpg) no-repeat center/cover;
+        }
+        .image5{
+            background: url(6.jpg) no-repeat center/cover;
+        }
+        .image6{
+            background: url(7.jpg) no-repeat center/cover;
+        }
+        .image7{
+            background: url(10.jpg) no-repeat center/cover;
+        }
+        .image8{
+            background: url(11.jpg) no-repeat center/cover;
+        }
+        .image9{
+            background: url(12.jpg) no-repeat center/cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="card">
+            <div class="img image1"></div>
+            <div class="caption">荧</div>
+        </div>
+        <div class="card">
+            <div class="img image2"></div>
+            <div class="caption">温迪</div>
+        </div>
+        <div class="card">
+            <div class="img image3"></div>
+            <div class="caption">琴</div>
+        </div>
+        <div class="card">
+            <div class="img image4"></div>
+            <div class="caption">芭芭拉</div>
+        </div>
+        <div class="card">
+            <div class="img image5"></div>
+            <div class="caption">可莉</div>
+        </div>
+        <div class="card">
+            <div class="img image6"></div>
+            <div class="caption">刻晴</div>
+        </div>
+        <div class="card">
+            <div class="img image7"></div>
+            <div class="caption">胡桃</div>
+        </div>
+        <div class="card">
+            <div class="img image8"></div>
+            <div class="caption">甘雨</div>
+        </div>
+        <div class="card">
+            <div class="img image9"></div>
+            <div class="caption">烟绯</div>
+        </div>
+    </div>
+</body>
+</html>
